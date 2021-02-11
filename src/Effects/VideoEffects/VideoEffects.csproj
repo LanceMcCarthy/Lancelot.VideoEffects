@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows10.0.19041</TargetFramework>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageOutputPath>.\nuget</PackageOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CsWinRTComponent>true</CsWinRTComponent>
+    <CsWinRTWindowsMetadata>10.0.19041.0</CsWinRTWindowsMetadata>
+    <PackageId>VideoEffects</PackageId>
+    <Authors>Lance McCarthy</Authors>
+    <Description>A library of real time videos effects based on Win2D that can be applied to a real time video stream as well as post processing streams.</Description>
+    <PackageLicenseExpression>GNU GPL v3</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/LanceMcCarthy/Lancelot.VideoEffects</PackageProjectUrl>
+    <Version>0.1.0</Version>
+    <RepositoryUrl>https://github.com/LanceMcCarthy/Lancelot.VideoEffects</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>UWP, WinRT, Video effects</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.1.1" />
+    <PackageReference Include="Win2D.uwp" Version="1.25.0" />
+  </ItemGroup>
+
+</Project>
